@@ -1,0 +1,151 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial black;
+	box-sizing:border-box;
+}
+body{
+	position: relative;
+	background: url(/assets/img/footer4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+}
+button{
+	background: gold;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 2px solid transparent;
+}
+button:hover{
+	cursor: pointer;
+	border: 2px solid gold;
+	background: transparent;
+}
+.header{
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 30px;
+	border-bottom: 2px solid gold;
+	background: white;
+}
+.logo span{
+	color: gold ;
+}
+form{
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+form .search{
+	border: none;
+	padding: 10px;
+	border-radius: 40px;
+}
+form .search::placeholder{
+	color: grey;
+	text-transform: capitalize;
+	font-weight: 200;
+}
+form .search-btn{
+	border: none;
+	border-radius: 20px;
+	background: gold;
+	padding: 10px;
+	transition: .5s all;
+}
+form .search-btn:hover{
+	cursor: pointer;
+	border: 2px solid gold;
+	background: white;
+}
+/* NAV STYLES */
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin-right: 20px;
+	padding: 10px;
+	border-radius: 20px;
+}
+nav ul li:hover{
+	background: gold;
+	box-shadow: 2px 2px 2px gold;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+}
+section{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 50px;
+}
+/* SECTION 1 */
+.section1{
+	height: calc(100vh - 15vh);
+	background: white;
+	z-index: 2;
+}
+.product{
+	height: 450px;
+	width: 300px;
+	border-radius: 10px;
+	box-shadow: 5px 5px gold;
+	overflow: hidden;
+}
+.img-box{
+	width: 100%;
+	overflow: hidden;
+}
+footer ol:hover::after{
+	content: " Designed By Dhinesh Contact No : 8610360491";
+}
+.img-box:hover img{
+	transform: scale(1.2);
+	transition: .5s all;
+}
+.img-box img{
+	width: 100%;
+	height: 250px;
+	object-fit:cover;
+}
+.product-desc{
+	height: calc(450px - 250px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+/* SECTION 2 */
+.section2{
+	height: 100vh;
+	background: rgba(83, 72, 10, 0.582);
+}
+.section2 .product{
+	background: white;
+}
+.section3{
+	background: white;
+	height: 100vh;
+}
+footer{
+	/* height: 100px; */
+	background: gold;
+	display: flex;
+	justify-content: space-between;
+}
+footer ol{
+	display: flex;
+	list-style: none;
+}
+footer ol li{
+	margin-right: 5px;
+}
